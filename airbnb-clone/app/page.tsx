@@ -4,5 +4,5 @@ import Image from 'next/image';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-	return <div>Hello Airbnb!</div>;
+	return <div className="text-rose" >Hello Airbnb!</div>;
 }
