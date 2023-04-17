@@ -5,6 +5,7 @@ import './globals.css';
 export const metadata = {
 	title: 'Airbnb',
 	description: 'Airbnb-clone by next.js',
+	content: 'nGVM0iXqB439f-HiPJPIbfkzy9n33-JVzB3mdk6ojFE',
 };
 
 const font = Nunito({
