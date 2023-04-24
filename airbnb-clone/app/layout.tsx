@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/react';
 import { Nunito } from 'next/font/google';
+import ClientOnly from './components/ClientOnly';
 import Navbar from './components/navbar/Navbar';
 import './globals.css';
 
@@ -21,9 +22,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={font.className}>
-				<Navbar />
+				<ClientOnly>
+					<Navbar />
+				</ClientOnly>
 				{children}
-				<Analytics />
+				{/* <Analytics /> */}
 			</body>
 		</html>
 	);
